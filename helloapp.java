@@ -30,7 +30,7 @@ public class helloapp {
         System.out.println("Hello " + name);
     }
 }
-*/
+
 public class helloapp {
     public static void main(String[] args) {
 
@@ -41,6 +41,21 @@ public class helloapp {
             // Loop through all names
             for (int i = 0; i < args.length; i++) {
                 System.out.println("Hello " + args[i]);
+            }
+        }
+    }
+}
+*/
+public class helloapp {
+    public static void main(String[] args) {
+
+        // Check if no arguments are passed
+        if (args.length == 0) {
+            System.out.println("Hello, World!");
+        } else {
+            // Enhanced for loop (for-each)
+            for (String name : args) {
+                System.out.println("Hello, " + name + "!");
             }
         }
     }
